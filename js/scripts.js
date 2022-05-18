@@ -2,7 +2,7 @@
 console.log('From Scripts:', document);
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+  navigator.serviceWorker.register('/my-pwa/service-worker.js', { scope: '/my-pwa/' })
     .then(function (registration) {
       console.log('SW Register success:', registration);
     })
