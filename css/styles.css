@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 7px #80CE17;
+}
+
+header img {
+  width: 50px;
+  margin: 0 5px 0 0;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #64646E;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #e1e1e2;
+  flex: 5;
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+
+  header {
+    border-right: solid 7px #80CE17;
+    border-bottom: none;
+  }
+
+  main {
+    flex: 2;
+  }
+}
